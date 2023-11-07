@@ -7,21 +7,21 @@
 </head>
 <body>
 <div class="button-theme">
-    <label for="button-theme">Выбирете цветовую тему</label>
+    <label for="button-theme">Выберете цветовую тему</label>
     <button id="button-theme" type="submit">темная</button>
     <h1>Опрос</h1>
-    <h2>«Слияниее МГТУ и МАГУ»</h2>
+    <h2>«Слияние МГТУ и МАГУ»</h2>
     <form action="/reg-data" method="post">
         <fieldset class="fieldset">
             <legend class="fieldset">
-                Ответте пожалуйста на пару вопросов
+                Ответьте на пару вопросов
             </legend>
             <div class="form-name">
                 <label for="name-input">Введите ваше </label>
                 <input id="name-input" type="text" placeholder="Имя" name="username"/>
             </div>
             <div class="form-name">
-                <label for="user-type">выбирете свою учебную деятельность</label>
+                <label for="user-type">выберете свою учебную деятельность</label>
                 <select id="user-type" name="usertype">
                     <option value="applicant">абитуриент</option>
                     <option value="student">студент</option>
@@ -30,19 +30,19 @@
                 </select>
             </div>
             <div class="form-name">
-                <label for="user-response">выбирете ответ из списка или оставте свой</label>
+                <label for="user-response">выберете ответ из списка или оставьте свой</label>
                 <select id="user-response" name="userrespone" disabled>
                     <option value="good">я считаю это хорошая идея</option>
                     <option value="bad">я думаю это не очень хорошая идея</option>
                 </select>
             </div>
             <div class="form-name">
-                <label id="data"   for="textArea" >
+                <label id="data"   for="comments" >
                     Оставить свой комментарий:
                 </label>
                 <br />
             </div>
-            <textarea  rows="4" cols="40" id="textArea">
+            <textarea  rows="4" cols="40" id="comments" name="userComment">
     </textarea>
         </fieldset>
         <button  id="button-submit" type="submit" >
