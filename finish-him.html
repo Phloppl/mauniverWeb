@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<link href="style/black-style.css" rel="stylesheet" type="text/css" id="theme-link">
+<head>
+    <meta charset="UTF-8">
+    <title>опрос</title>
+</head>
+<body>
+<div class="button-theme">
+    <label for="button-theme">Выбирете цветовую тему</label>
+    <button id="button-theme" type="submit">темная</button>
+    <h1>Опрос</h1>
+    <h2>«Слияниее МГТУ и МАГУ»</h2>
+    <form action="/reg-data" method="post">
+        <fieldset class="fieldset">
+            <legend class="fieldset">
+                Ответте пожалуйста на пару вопросов
+            </legend>
+            <div class="form-name">
+                <label for="name-input">Введите ваше </label>
+                <input id="name-input" type="text" placeholder="Имя" name="username"/>
+            </div>
+            <div class="form-name">
+                <label for="user-type">выбирете свою учебную деятельность</label>
+                <select id="user-type" name="usertype">
+                    <option value="applicant">абитуриент</option>
+                    <option value="student">студент</option>
+                    <option value="teacher">преподаватель</option>
+                    <option value="parent">родитель учащегося</option>
+                </select>
+            </div>
+            <div class="form-name">
+                <label for="user-response">выбирете ответ из списка или оставте свой</label>
+                <select id="user-response" name="userrespone" disabled>
+                    <option value="good">я считаю это хорошая идея</option>
+                    <option value="bad">я думаю это не очень хорошая идея</option>
+                </select>
+            </div>
+            <div class="form-name">
+                <label id="data"   for="textArea" >
+                    Оставить свой комментарий:
+                </label>
+                <br />
+            </div>
+            <textarea  rows="4" cols="40" id="textArea">
+    </textarea>
+        </fieldset>
+        <button  id="button-submit" type="submit" >
+            Оставить отзыв
+        </button>
+
+    </form>
+
+</div>
+<script type="text/javascript" src="JS/typeJS.js">
+
+</script>
+</body>
+</html>
